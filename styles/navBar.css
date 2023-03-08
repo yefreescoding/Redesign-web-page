@@ -1,11 +1,12 @@
 header.header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  background-color: #111;
+  background-color: #11111122;
   color: white;
 }
 
@@ -82,19 +83,10 @@ div.infoButton div.buttons-header button {
 }
 
 @media (min-width:429px){
-  body {
-    background-color: #111;
-  }
-
   html {
-    font-size: 90%;
+    font-size: 100%;
   }
-
   header.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;

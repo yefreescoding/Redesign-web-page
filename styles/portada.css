@@ -1,54 +1,66 @@
-.mainCoverDiv {
-  overflow: hidden;
+main.contenedor-padre-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-items: center;
+}
+
+div.contenedor-portada {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex: 2;
-  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  margin-top: 110px;
   margin-bottom: 10px;
+  position: relative;
 }
 
+#videoCover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  border: none;
+  filter: brightness(50%);
+}
 
-.coverInfoDiv {
-  flex-shrink: 1;
+div.container-InfoDiv {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: column;
   row-gap: 10px;
   padding: 60px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
 }
 
-.titleCover {
-  color: rgb(210, 210, 210);
-  font-size: 60px;
-  justify-self: flex-start;
-  margin: 0px;
+div.container-InfoDiv h1.titleCover {
+  color: rgb(243, 240, 240);
+  font-size: 4.7em;
 }
 
-.descriptionInfo {
-  font-size: 27px;
-  color: rgba(182, 182, 182, 0.87);
+div.container-InfoDiv p.descriptionInfo {
+  font-size: 2em;
+  color: rgba(255, 248, 248, 0.9);
 }
 
-.buttonsCover {
+div.container-InfoDiv div.buttonsCover {
+  margin-top: 1em;
   display: flex;
   justify-content: space-evenly;
 }
 
-.buttonCover {
-  border: none;
+div.container-InfoDiv div.buttonsCover button.buttonCover {
+  border: solid white 0.5px;
+  color: white;
   font-size: 17px;
   padding: 17px 18px; 
   border-radius: 16px;
-}
-
-.plans {
-  border: 3px solid rgb(153, 63, 153);
-  background-color: rgb(153, 63, 153);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all .24s linear;
 }
 
 .planLinks {
@@ -56,29 +68,17 @@
   text-decoration: none;
 }
 
-.plans:hover {
-  border: none;
-  border: 3px solid rgb(255, 161, 255);
+div.container-InfoDiv div.buttonsCover button.buttonCover:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.plans:active {
-  border: 3px solid rgb(252, 185, 252);
-  box-shadow: -1px -1px 10px rgba(253, 129, 253, 0.8);
+div.container-InfoDiv div.buttonsCover button.buttonCover:active {
+  background-color: rgba(255, 255, 255, 0.8);;
 }
 
-.free {
-  background-color: rgb(21, 21, 21);
-  color: white;
-  cursor: pointer;
-  transition: all 0.25s;
-}
 
-.free:hover {
-  transform: scale(1.03, 1.03);
-  box-shadow: -0.5px -0.5px 6px rgba(253, 129, 253, 0.58);
-}
-
-.subDescription {
+/*
+  .subDescription {
   color: white;
   font-size: 18px;
   text-align: center;
@@ -95,4 +95,16 @@
   width: 540px;
   height: auto;
   border-radius: 16px;
+}
+*/
+
+@media (min-width:419px) {
+  
+  div.contenedor-portada {
+    justify-content: center;
+  }
+  
+  #videoCover {
+    width: 100%;
+  }
 }
