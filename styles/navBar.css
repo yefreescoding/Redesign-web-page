@@ -58,11 +58,10 @@ div.infoButton div.socials {
 }
 
 div.infoButton div.socials img {
-  width: 100%;
+  width: 3em;
   margin: 0 1em;
   filter: invert(100%);
 }
-
 
 div.infoButton div.buttons-header {
   margin: 1.5em 0;
@@ -92,10 +91,15 @@ div.infoButton div.buttons-header button {
   }
 
   header.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.51);
   }
 
   header nav.navBar {
