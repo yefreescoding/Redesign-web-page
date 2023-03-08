@@ -2,39 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to train with Leana</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/stylesTopBar.css">
-    <link rel="stylesheet" href="styles/stylesCover.css">
-    <link rel="stylesheet" href="styles/underCoverDiv.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Sassy+Frass&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+
+    <title>Redesign | Train with Leana</title>
   </head>
-  
   <body>
 
-      <div class="topInfo-div">
+    <header class="header top-nav">
+      <!--Barra de navegación para toda la pagina. **TOP** -->
+      <nav class="navBar">
         <div class="logoDiv">
-          <h1 class="textLogo">
-            Sweat with <span class="leanna">Leanna</span>
-          </h1>
+          <div class="logo-letters" href="#home">LD</div>
         </div>
-
-        <div class="infoDiv">
-          <span class="topTextLink">Enterprise</span>
-          <span class="topTextLink">Business types</span>
-          <span class="topTextLink">Features</span>
-          <span class="topTextLink">Pricing</span>
+        <!--Links de navegación para toda la página.-->
+        <ul class="infoDiv">
+          <li class="topTextLink">Home</li>
+          <li class="topTextLink">Our work</li>
+          <li class="topTextLink">About us</li>
+          <li class="topTextLink">Pricing</li>
+        </ul>
+      </nav>
+      <!--Barra de navegación para toda la pagina. **LEFT** -->
+      <div class="infoButton">
+        <!--Section de redes sociales-->
+        <div class="socials">
+          <img src="images/logos/instagram.png" alt="instagram">
+          <img src="images/logos/linkedin.png" alt="linkedin">
+          <img src="images/logos/twitter.png" alt="twitter">
         </div>
-
-        <div class="infoButton">
+        <!--Menu despegable. Para Smartphones.-->
+        <div class="buttons-header">
           <button class="logIn">Log In</button>
           <button class="signUp">Sign Up</button>
         </div>
-
       </div>
+    </header>
+    <!--Aqui termina el Header.-->
+
+    <!--
+      <main>
+      <video autoplay muted loop id="myVideo">
+        <source src="images/20230308-123336-389.mp4" type="video/mp4">
+      </video>
+    </main>
+    -->
 
       <div class="mainCoverDiv">
         <div class="coverInfoDiv">
@@ -96,6 +113,17 @@
       </div>
     </div>
     
-    
+    <!--
+          <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("my-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    -->
   </body>
 </html>
