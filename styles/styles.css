@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*
+    border: 0.5px solid red;
+  */
+}
+
+html {
+  font-size: 70%;
+  font-family: "Kanit", sans-serif;
+}
+
+header.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.1333333333);
+  color: white;
+}
+
+header nav div.logoDiv {
+  text-align: start;
+  padding-left: 1em;
+}
+
+header nav div.logoDiv div.logo-letters {
+  font-size: 4em;
+  font-weight: 900;
+  font-family: "Dosis", sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
+
+header nav.navBar {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+header nav.navBar ul {
+  list-style-type: none;
+  display: none;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav.navBar ul li {
+  font-size: 1.3em;
+  margin: 0.5em 1em;
+  cursor: pointer;
+}
+
+div.infoButton {
+  position: absolute;
+  top: 0.4em;
+  margin-top: 1em;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+div.infoButton div.socials {
+  align-self: flex-end;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 50%;
+}
+
+div.infoButton div.socials img {
+  width: 3em;
+  margin: 0 1em;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+div.infoButton div.buttons-header {
+  margin: 1.5em 0;
+  width: 100%;
+  display: none;
+  flex-flow: row;
+  justify-content: center;
+}
+
+div.infoButton div.buttons-header button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.1em;
+  padding: 1em 1.5em;
+  border: white 1px solid;
+  border-radius: 8px;
+  margin: 1em;
+  cursor: pointer;
+  transition: all 0.24s linear;
+}
+
+div.infoButton div.buttons-header button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 429px) {
+  html {
+    font-size: 80%;
+  }
+  header.header {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.51);
+  }
+  header nav.navBar {
+    flex-flow: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  header nav.navBar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+  }
+  header nav.navBar ul li {
+    font-size: 1em;
+    margin: 0em 1em;
+  }
+  div.infoButton {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-flow: row;
+    margin: 0;
+  }
+  div.infoButton div.socials {
+    justify-content: flex-end;
+    flex: 2;
+  }
+  div.infoButton div.socials img {
+    width: 2em;
+  }
+  div.infoButton div.buttons-header {
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  div.infoButton div.buttons-header button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+  }
+}
+@media (min-width: 767px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+main.contenedor-padre-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-items: center;
+}
+
+article.contenedor-portada {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#videoCover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  border: none;
+  filter: brightness(50%);
+}
+
+div.container-InfoDiv {
+  display: flex;
+  flex-flow: column;
+  row-gap: 10px;
+  padding: 60px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+div.container-InfoDiv h1.titleCover {
+  color: rgb(243, 240, 240);
+  font-size: 4.7em;
+}
+
+div.container-InfoDiv p.descriptionInfo {
+  font-size: 2em;
+  color: rgba(255, 248, 248, 0.9);
+}
+
+div.container-InfoDiv div.buttonsCover {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.container-InfoDiv div.buttonsCover button.buttonCover {
+  border: solid white 0.5px;
+  color: white;
+  font-size: 17px;
+  padding: 17px 18px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.24s linear;
+}
+
+.planLinks {
+  color: white;
+  text-decoration: none;
+}
+
+div.container-InfoDiv div.buttonsCover button.buttonCover:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.container-InfoDiv div.buttonsCover button.buttonCover:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 419px) {
+  article.contenedor-portada {
+    justify-content: center;
+  }
+  #videoCover {
+    width: 100%;
+  }
+}
+.intro {
+  background-color: white;
+  width: 100%;
+  height: 90vh;
+  color: #111;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+.intro .intro__title {
+  font-size: 5em;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  color: rgba(38, 38, 38, 0.7254901961);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.intro__parag {
+  font-size: 2em;
+  text-align: center;
+  color: #3a3a3a;
+  font-weight: 100;
+}
+.intro__parag .red-text {
+  color: red;
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    align-items: flex-start;
+    padding: 5%;
+    height: 88vh;
+  }
+  .intro__parag {
+    text-align: start;
+    font-weight: 400;
+  }
+}
+/*
+
+  PRINCIPALS styles for the description article.
+
+  background-color: white
+  Text color : greyish black
+  important text span : red
+
+*//*# sourceMappingURL=styles.css.map */
