@@ -30,7 +30,6 @@ Create a web page where users should be able to:
 ![](screenshots/desktop.png)
 ![](screenshots/mobile.png)
 
-
 ### Links
 
 - Code: [GitHub Repository](https://github.com/yefreescoding/Redesign-web-page.git)
