@@ -18,6 +18,9 @@ header nav div.logoDiv {
 header nav div.logoDiv div.logo-letters {
   font-size: 4em;
   font-weight: 900;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  cursor: pointer;
 }
 
 header nav.navBar {
@@ -39,6 +42,7 @@ header nav.navBar ul {
 header nav.navBar ul li {
   font-size: 1.3em;
   margin: 0.5em 1em;
+  cursor: pointer;
 }
 
 div.infoButton {
@@ -62,6 +66,7 @@ div.infoButton div.socials img {
   width: 3em;
   margin: 0 1em;
   filter: invert(100%);
+  cursor: pointer;
 }
 
 div.infoButton div.buttons-header {
@@ -80,11 +85,17 @@ div.infoButton div.buttons-header button {
   border: white 1px solid;
   border-radius: 8px;
   margin: 1em;
+  cursor: pointer;
+  transition: all .24s linear;
 }
+div.infoButton div.buttons-header button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 
 @media (min-width:429px){
   html {
-    font-size: 100%;
+    font-size: 80%;
   }
   header.header {
     flex-flow: row;
@@ -142,3 +153,14 @@ div.infoButton div.buttons-header button {
   }
 }
 
+@media (min-width:767px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width:1024px) {
+  html {
+    font-size: 100%;
+  }
+}
