@@ -8,18 +8,13 @@
   
   &__containers {
     position: relative;
-    /*
-    display: flex;
-    flex-flow: column;
-    */
     background-color: black;
     background-image: url(../../images/paginas/full-body-hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 29em;
     height: 45em;
-    top: -80px;
-
+    top: -10em;
 
     .workouts__level {
       position: absolute;
@@ -56,16 +51,12 @@
       }
     }
   }
-
   &__containers.lower-body {
     background-image: url(../../images/paginas/LowerBody.png);
   }
-
   &__containers.stretching {
     background-image: url(../../images/paginas/StretchExe.png);
   }
-  
-
 }
 
 @media (min-width:640px){
@@ -76,7 +67,6 @@
     height: 100vh;
 
     &__containers {
-
       width: 25em;
       height: 40em;
       .workouts__info {
@@ -89,8 +79,9 @@
         }
       }
     }
+
     &__containers.lower-body {
-      top: 0;
+      top: -5em;
     }
   }
 }

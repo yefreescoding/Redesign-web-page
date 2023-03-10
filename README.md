@@ -1,3 +1,5 @@
+
+
 Hey. Welcome to my web development project. Currently in development. 
 
 
@@ -15,8 +17,6 @@ Hey. Welcome to my web development project. Currently in development.
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### I challenge myself to:
@@ -33,7 +33,7 @@ Create a web page where users should be able to:
 ### Links
 
 - Code: [GitHub Repository](https://github.com/yefreescoding/Redesign-web-page.git)
-- Live Site URL: [GitHub Live Site](https://yefreescoding.github.io/Redesign-web-page/)
+- Live Site URL: [GitHub Live Site]()
 
 ## My process
 
@@ -70,14 +70,11 @@ const proudOfThisFunc = () => {
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
-
 
 ## Author
 
-- Website - [Yefree De Los Santos](https://www.your-site.com)
+- Website - [Yefree De Los Santos](#)
 - GitHub - [@yefreescoding](https://github.com/yefreescoding)
 - Twitter - [@YefreeCodes](https://twitter.com/YefreeCodes)
 
