@@ -15,6 +15,7 @@
     width: 29em;
     height: 45em;
     top: -10em;
+    transition: all .24s linear;
 
     .workouts__level {
       position: absolute;
@@ -56,6 +57,10 @@
   }
   &__containers.stretching {
     background-image: url(../../images/paginas/StretchExe.png);
+  }
+
+  &__containers:hover {
+    transform: scale(1.05, 1.05);
   }
 }
 

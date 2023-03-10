@@ -320,6 +320,7 @@ div.container-InfoDiv div.buttonsCover button.buttonCover:active {
   width: 29em;
   height: 45em;
   top: -10em;
+  transition: all 0.24s linear;
 }
 .workouts__containers .workouts__level {
   position: absolute;
@@ -356,6 +357,9 @@ div.container-InfoDiv div.buttonsCover button.buttonCover:active {
 }
 .workouts__containers.stretching {
   background-image: url(../../images/paginas/StretchExe.png);
+}
+.workouts__containers:hover {
+  transform: scale(1.05, 1.05);
 }
 
 @media (min-width: 640px) {
