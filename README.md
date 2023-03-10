@@ -30,11 +30,10 @@ Create a web page where users should be able to:
 ![](screenshots/desktop.png)
 ![](screenshots/mobile.png)
 
-
 ### Links
 
 - Code: [GitHub Repository](https://github.com/yefreescoding/Redesign-web-page.git)
-- Live Site URL: [GitHub Live Site](https://github.com/yefreescoding/Redesign-web-page/settings/pages)
+- Live Site URL: [GitHub Live Site](https://yefreescoding.github.io/Redesign-web-page/)
 
 ## My process
 
