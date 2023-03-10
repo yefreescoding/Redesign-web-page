@@ -6,7 +6,8 @@ header.header {
   z-index: 5;
   display: flex;
   width: 100%;
-  background-color: #11111122;
+  height: 100px;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.613), rgba(255, 255, 255, 0.01));
   color: white;
 }
 
@@ -46,19 +47,18 @@ header nav.navBar ul li {
 }
 
 div.infoButton {
-  position: absolute;
-  top: 0.4em;
   margin-top: 1em;
   display: flex;
   flex-flow: column;
+  justify-content: flex-start;
   width: 100%;
 }
 div.infoButton div.socials {
-  align-self: flex-end;
   display: flex;
   flex-flow: row;
-  align-items: center;
-  width: 50%;
+  align-items: flex-start;
+  justify-content: end;
+  width: 100%;
 
 }
 
@@ -93,11 +93,12 @@ div.infoButton div.buttons-header button:hover {
 }
 
 
-@media (min-width:429px){
+@media (min-width:640px){
   html {
     font-size: 80%;
   }
   header.header {
+    background: #11111122;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
