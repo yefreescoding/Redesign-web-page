@@ -30,9 +30,15 @@
       <div class="infoButton">
         <!--Section de redes sociales-->
         <div class="socials">
-          <img src="images/logos/instagram.png" alt="instagram">
-          <img src="images/logos/linkedin.png" alt="linkedin">
-          <img src="images/logos/twitter.png" alt="twitter">
+          <a href="https://www.instagram.com/leanadeebb/" target="_blank">
+            <img src="images/logos/instagram.png" alt="instagram" class="socials__ig">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/logos/twitter.png" alt="linkedin">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/logos/linkedin.png" alt="twitter" class="socials__linke">
+          </a>
         </div>
         <!--Menu despegable. Para Smartphones.-->
         <div class="buttons-header">
@@ -66,7 +72,7 @@
         </div>
       </article>
       <!--Here is the second cover of the web page.-->
-      <article class="intro light">
+      <article class="intro">
         <h2 class="intro__title">
           What is this all about?
         </h2>
@@ -123,27 +129,61 @@
           </div>
         </a>
       </section>
+      <!--Coming Soon-->
+      <!--<section class="where-to-find-us"></section>-->
     </main>
+
     <!--The last part of the page. Buff!-->
     <footer class="greetings-links">
       <!--The footer container is divided in 2 parts-->
-      <!-- The 1 part -->
+      <!-- 1 PART -->
       <div class="email-links-container">
         <!--The email form subscription-->
         <div class="email-form">
           <div class="email-form__text">
             <span>Hey there</span>
             <h2>Let's talk <span class="h2__sports">Sport</span></h2>
+            <span>Subscribe to our newsletter.</span>
           </div>
-          <form name="email-form__newsletter" action="">
-            <input type="email" name="email-news">
-            <input type="submit" value="subscribe">
+          <form name="email-form__newsletter" action="#" method="get">
+            <input class="email" type="email" name="email-news">
+            <input class="button" type="submit" value="subscribe">
           </form>
         </div>
         <!--The important information about the company or the creator of the web page-->
         <div class="links-contacts">
           <div class="links-contacts__container">
-            <span class="__header"></span>
+            <span class="__header">Address</span>
+            <ul>
+              <li>Calle de la Gitana</li>
+              <li>Madrid</li>
+              <li>Spain</li>
+            </ul>
+            <a href="">Localization Maps</a>
+          </div>
+          <!--Information blocks-->
+          <div class="links-contacts__container">
+            <span class="__header">Address</span>
+            <ul>
+              <li>Calle de la Gitana</li>
+              <li>Madrid</li>
+              <li>Spain</li>
+            </ul>
+            <a href="">Localization Maps</a>
+          </div>
+           <!--Information blocks-->
+           <div class="links-contacts__container">
+            <span class="__header">Address</span>
+            <ul>
+              <li>Calle de la Gitana</li>
+              <li>Madrid</li>
+              <li>Spain</li>
+            </ul>
+            <a href="">Localization Maps</a>
+          </div>
+           <!--Information blocks-->
+           <div class="links-contacts__container">
+            <span class="__header">Address</span>
             <ul>
               <li>Calle de la Gitana</li>
               <li>Madrid</li>
@@ -153,12 +193,13 @@
           </div>
         </div>
       </div>
-      <!--The 2 part-->
+      <!--The 2 PART -->
       <div class="copyright">
         <p>2023. Every right reserved to the creator of the web page.</p>
         <a href="">links to the source code</a>
         <a href="">Cool video</a>
       </div>
     </footer>
+    
   </body>
 </html>

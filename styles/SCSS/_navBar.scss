@@ -58,8 +58,12 @@ div.infoButton div.socials {
   flex-flow: row;
   align-items: flex-start;
   justify-content: end;
+  align-items: center;
   width: 100%;
 
+  img.socials__ig, img.socials__linke {
+    width: 2.7em;
+  }
 }
 
 div.infoButton div.socials img {
@@ -67,6 +71,11 @@ div.infoButton div.socials img {
   margin: 0 1em;
   filter: invert(100%);
   cursor: pointer;
+  transition: all .24s linear;
+}
+
+div.infoButton div.socials img:hover {
+  transform: translate(0, -3px);
 }
 
 div.infoButton div.buttons-header {
@@ -137,10 +146,16 @@ div.infoButton div.buttons-header button:hover {
   div.infoButton div.socials {
     justify-content: flex-end;
     flex: 2;
+
+    img.socials__ig, img.socials__linke {
+      width: 1.8em;
+    }
   }
   div.infoButton div.socials img {
     width: 2em;
   }
+
+ 
   div.infoButton div.buttons-header {
     width: auto;
     margin: 0;
@@ -151,17 +166,5 @@ div.infoButton div.buttons-header button:hover {
     font-size: 1em;
     padding: 0.5em 1em;
     margin: 0 1em;
-  }
-}
-
-@media (min-width:767px) {
-  html {
-    font-size: 80%;
-  }
-}
-
-@media (min-width:1024px) {
-  html {
-    font-size: 100%;
   }
 }

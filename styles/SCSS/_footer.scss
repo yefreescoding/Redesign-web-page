@@ -1,0 +1,109 @@
+footer.greetings-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 100px;
+  width: 100%;
+  height: 100vh;
+
+  div.email-links-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #111;
+    color: white;
+    div.email-form {
+      background-color: rgb(225, 47, 74);
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 5em;
+      align-items: center;
+      padding-left: 3em;
+
+      div.email-form__text{
+        margin-bottom: 3em;
+        span {
+          font-size: 2em;
+        }
+        h2 {
+          margin-top: -30px;
+          font-size: 2.8em;
+          margin-bottom: 1em;
+          span {
+            font-family: 'Allerta Stencil', sans-serif;
+          }
+        }
+      }
+
+      form {
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+        gap: 1em;
+        padding-bottom: 10em;
+
+        input.email, input.button {
+          padding: 0.5em;
+          font-size: 1.3em;
+          border-radius: 30px;
+          border: none; 
+        }
+        input.button {
+          width: 10em;
+          background-color: white;
+          letter-spacing: 3px;
+        }
+      }
+
+    }
+    div.links-contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      place-items: center;
+      padding: 4em 0;
+      gap: 4em;
+      &__container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 2em;
+        font-size: 1.4em;
+        span {
+          font-weight: bold;
+        }
+        ul {
+          list-style-type: none;
+          font-weight: 100;
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:648px) {
+  footer.greetings-links {
+
+    div.email-links-container {
+      grid-template-columns: 1fr 1fr;
+
+      div.email-form {
+        grid-template-rows: 1fr 1fr;
+
+        div.email-form__text{
+          margin: 0;
+        }
+
+        form {
+          
+          align-self: flex-start;
+          input.email {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}

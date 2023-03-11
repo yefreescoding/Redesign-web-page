@@ -33,7 +33,7 @@ Create a web page where users should be able to:
 ### Links
 
 - Code: [GitHub Repository](https://github.com/yefreescoding/Redesign-web-page.git)
-- Live Site URL: [GitHub Live Site]()
+- Live Site URL: [Vercel Live Site](https://redesign-web-page.vercel.app/)
 
 ## My process
 
