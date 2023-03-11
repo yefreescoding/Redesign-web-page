@@ -422,12 +422,12 @@ footer.greetings-links div.email-links-container div.email-form div.email-form__
   font-size: 2em;
 }
 footer.greetings-links div.email-links-container div.email-form div.email-form__text h2 {
-  margin-top: -30px;
+  margin-top: -20px;
   font-size: 2.8em;
-  margin-bottom: 1em;
 }
 footer.greetings-links div.email-links-container div.email-form div.email-form__text h2 span {
   font-family: "Allerta Stencil", sans-serif;
+  font-size: 1.5em;
 }
 footer.greetings-links div.email-links-container div.email-form form {
   width: 90%;
@@ -443,9 +443,11 @@ footer.greetings-links div.email-links-container div.email-form form input.email
   border: none;
 }
 footer.greetings-links div.email-links-container div.email-form form input.button {
+  color: #111;
   width: 10em;
   background-color: white;
   letter-spacing: 3px;
+  font-weight: 600;
 }
 footer.greetings-links div.email-links-container div.links-contacts {
   display: grid;
