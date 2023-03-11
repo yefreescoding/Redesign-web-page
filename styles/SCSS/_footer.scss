@@ -10,6 +10,7 @@ footer.greetings-links {
     grid-template-columns: 1fr;
     background-color: #111;
     color: white;
+
     div.email-form {
       background-color: rgb(225, 47, 74);
       color: white;
@@ -25,12 +26,22 @@ footer.greetings-links {
           font-size: 2em;
         }
         h2 {
-          margin-top: -20px;
-          font-size: 2.8em;
+          margin-top: -10px;
+          font-size: 2.5em;
+
           span {
-            font-family: 'Allerta Stencil', sans-serif;
-            font-size: 1.5em;
+            font-family: 'Dancing Script', cursive;
           }
+        }
+
+        span.material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 300,
+          'GRAD' 0,
+          'opsz' 48;
+          position: relative;
+          top: 5px;
         }
       }
 

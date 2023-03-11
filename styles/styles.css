@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -422,12 +423,16 @@ footer.greetings-links div.email-links-container div.email-form div.email-form__
   font-size: 2em;
 }
 footer.greetings-links div.email-links-container div.email-form div.email-form__text h2 {
-  margin-top: -20px;
-  font-size: 2.8em;
+  margin-top: -10px;
+  font-size: 2.5em;
 }
 footer.greetings-links div.email-links-container div.email-form div.email-form__text h2 span {
-  font-family: "Allerta Stencil", sans-serif;
-  font-size: 1.5em;
+  font-family: "Dancing Script", cursive;
+}
+footer.greetings-links div.email-links-container div.email-form div.email-form__text span.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+  position: relative;
+  top: 5px;
 }
 footer.greetings-links div.email-links-container div.email-form form {
   width: 90%;
