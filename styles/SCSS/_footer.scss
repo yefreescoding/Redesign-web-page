@@ -95,6 +95,21 @@ footer.greetings-links {
       }
     }
   }
+
+  div.copyright {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: #111;
+    color: white;
+
+    a {
+      color: white;
+    }
+
+  }
 }
 
 @media (min-width:648px) {
@@ -118,6 +133,16 @@ footer.greetings-links {
           }
         }
       }
+    }
+
+    div.copyright {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1em;
+      background-color: #111;
+      color: white;
     }
   }
 }

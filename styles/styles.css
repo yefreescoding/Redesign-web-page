@@ -331,8 +331,8 @@ div.container-InfoDiv div.buttonsCover button.buttonCover:active {
   background-image: url(../../images/paginas/full-body-hero.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 35em;
-  height: 50em;
+  width: 33em;
+  height: 48em;
   top: -10em;
   transition: all 0.24s linear;
 }
@@ -378,20 +378,44 @@ div.container-InfoDiv div.buttonsCover button.buttonCover:active {
 
 @media (min-width: 640px) {
   .workouts {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    width: 100%;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
   }
-  .workouts__containers .workouts__info h3 {
-    margin-bottom: 0.5em;
+  .workouts__containers {
+    width: 35em;
+    height: 45em;
+    top: 0;
   }
   .workouts__containers .workouts__info p {
-    font-size: 1.7em;
-    line-height: 30px;
+    font-size: 1.5em;
   }
   .workouts__containers.lower-body {
-    top: -5em;
+    top: 0;
+  }
+  .workouts__containers.stretching {
+    display: none;
+  }
+}
+@media (min-width: 1007px) {
+  .workouts {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+  .workouts__containers {
+    width: 29em;
+    height: 55em;
+    top: -10em;
+  }
+  .workouts__containers.lower-body {
+    top: -2.4em;
+  }
+  .workouts__containers.stretching {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .workouts__containers {
+    width: 35em;
+    height: 55em;
   }
 }
 footer.greetings-links {
@@ -479,6 +503,18 @@ footer.greetings-links div.email-links-container div.links-contacts__container u
 footer.greetings-links div.email-links-container div.links-contacts__container a {
   color: white;
 }
+footer.greetings-links div.copyright {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: #111;
+  color: white;
+}
+footer.greetings-links div.copyright a {
+  color: white;
+}
 
 @media (min-width: 648px) {
   footer.greetings-links div.email-links-container {
@@ -495,6 +531,15 @@ footer.greetings-links div.email-links-container div.links-contacts__container a
   }
   footer.greetings-links div.email-links-container div.email-form form input.email {
     width: 60%;
+  }
+  footer.greetings-links div.copyright {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    background-color: #111;
+    color: white;
   }
 }
 /*
