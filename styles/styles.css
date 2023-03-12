@@ -381,7 +381,7 @@ div.container-InfoDiv div.buttonsCover button.buttonCover:active {
     grid-template-columns: 1fr 1fr;
   }
   .workouts__containers {
-    width: 35em;
+    width: 25em;
     height: 45em;
     top: 0;
   }
@@ -538,8 +538,6 @@ footer.greetings-links div.copyright a {
     justify-content: space-around;
     align-items: center;
     gap: 1em;
-    background-color: #111;
-    color: white;
   }
 }
 /*
